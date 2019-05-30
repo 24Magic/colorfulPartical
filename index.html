@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>colorful partical</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="#" class="toggleSlidebar toggleLeft">切换</a>
+        <div class="slidebarCt toggleDisplay">
+
+            <div class="content">
+                <div class="title">
+                    <span class="titleText">文字粒子</span>
+                </div>
+                <div class="toggleShape">
+                    <div class="shapeCt">
+                        <span class="shape round toggleColor">圆形</span>
+                        <span class="shape rect">方块</span>
+                    </div>
+
+                </div>
+                <div class="inputCt">
+                    <div class="inputTitle">文字</div>
+                    <input id="message" type="text" name="message" value="❤" autofocus onchange="change()">
+                    <div class="inputTitle">加速度</div>
+                    <input id="gravity" type="range" value="50" name="gravity" onchange="changeG()">
+                    <div class="inputTitle">周期</div>
+                    <input id="duration" type="range" value="20" name="duration" onchange="changeG()">
+                    <div class="inputTitle">小球半径变化速度</div>
+                    <input id="speed" type="range" value="20" name="speed" onchange="changeG()">
+                    <div class="inputTitle">小球初始半径大小</div>
+                    <input id="radius" type="range" value="3" name="radius" onchange="changeG()">
+                    <div class="inputTitle">分辨率</div>
+                    <input id="resolution" type="range" value="100" name="resolution" onchange="changeG()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas">
+        您的浏览器不支持canvas
+    </canvas>
+    <script src="./js/slideBar.js"></script>
+    <script src="./js/partical.js"></script>
+    <script src="./js/shape.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

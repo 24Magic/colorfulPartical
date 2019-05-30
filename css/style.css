@@ -1,0 +1,139 @@
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+.slidebar {
+    position: relative;
+    width: 300px;
+}
+.slidebarCt {
+    position: absolute;
+    width: 300px;
+    background-color: #000;
+}
+.toggleDisplay {
+    display: none;
+}
+.toggleSlidebar {
+    -webkit-appearance: none;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    left: 300px;
+    color: #fff;
+    background-color: #666;
+    cursor: pointer;
+    transition: left ease-in-out .1s;
+}
+.toggleLeft {
+    left: 0;
+}
+.toggleSlidebar:hover {
+    background-color: #333;
+    color: #ddd;
+}
+.content {
+    margin: 34px 0;
+}
+.title {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.title .titleText{
+    text-align: center;
+    font-size: 24px;
+    color: orange;
+}
+.toggleShape {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.toggleShape .shapeCt {
+    border-radius: 22px;
+    border: 1px solid orange;
+}
+.toggleShape .shapeCt .shape {
+    float: left;
+    padding: 7px 15px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.toggleShape .shapeCt::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.toggleShape .shapeCt .round {
+    border-radius: 22px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.toggleShape .shapeCt .rect {
+    border-radius: 22px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.toggleColor {
+    color: #000;
+    background-color: orange;
+}
+.inputCt {
+    height: 100%;
+}
+.inputCt .inputTitle {
+    margin: 0 45px 0 45px;
+    padding: 5px;
+    font-size: 16px;
+    color: #0086db;
+}
+.inputCt input[type='text'] {
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid;
+    border-color: #fff;
+    display: block;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    width: 70%;
+    text-decoration: none;
+    text-indent:7px;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    transition: border-color ease-in-out .3s;
+}
+.inputCt input[type='text']:focus {
+    border-color: orange;
+}
+.inputCt input[type="range"] {
+    -webkit-appearance: none;
+    outline: 0;
+    margin: 20px 45px;
+    width: 70%;
+    height: 10px;
+    border-radius: 15px;
+}
+.inputCt input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 30px;
+    width: 20px;
+    background: none repeat scroll 0 0 orange;
+    border-radius: 15px;
+}
